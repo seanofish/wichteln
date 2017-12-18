@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+ 
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+    }

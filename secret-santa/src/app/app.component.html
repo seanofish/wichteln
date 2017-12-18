@@ -1,0 +1,28 @@
+<mat-sidenav-container class="main-sidenav-container">
+    <mat-sidenav #sidenav mode="over" class="main-sidenav">
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <a routerLink="user">Profil</a>
+            </mat-list-item>
+            <mat-list-item role="listitem">Item 2</mat-list-item>
+            <mat-list-item role="listitem">Item 3</mat-list-item>
+        </mat-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon class="md-24">menu</mat-icon>
+                </button>
+                <span>Wichteln 2017</span>
+                <span class="example-spacer"></span>
+                <a mat-icon-button a routerLink="register" class="register-link">
+                    <mat-icon class="md-24">menu</mat-icon> Registrieren
+                </a>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

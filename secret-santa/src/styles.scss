@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "scss/mixins";
+@import "scss/navigations";
+
+app-root {
+    height: 100%;
+    display: block;
+}
+body,html {
+    height: 100%;
+    font-family: 'Barlow', sans-serif !important;
+}
+.main-sidenav-container {
+    height: 100%;
+}
+
+.login-register-tab {
+}
+.login-register-card {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.register-link {
+    float: right;
+}
+
+.form-element {
+    width: 100%;
+}
