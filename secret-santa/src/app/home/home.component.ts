@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,13 @@ import { MatButtonModule } from '@angular/material';
 })
 export class HomeComponent implements OnInit {
 
+
   hidePW = true;
 
-  constructor() { }
+  constructor(private _httpClient: HttpClient) { }
 
   ngOnInit() {
+
   }
 
 }
